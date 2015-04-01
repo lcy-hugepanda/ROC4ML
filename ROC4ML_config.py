@@ -18,7 +18,7 @@ style = 'seaborn'
 # Each score file represents a machine learning model.
 # We plot the ROC curves of them in a same figure.
 # The appearing name of the models are the same with
-# their score files (without suffix).
+# their score files (without postfix).
 #
 # Note that the score files should be plain text files
 # and each line contain one float value, e.g.:

@@ -26,7 +26,7 @@ def load_data():
       print '[!ERROR!] Please place one label file in the path_label folder'
       return
     for filename in filenames:
-      data = np.loadtxt(path_score + '\\' + filename, dtype=np.float64, delimiter="\n")
+      data = np.loadtxt(path_score + os.path.sep + filename, dtype=np.float64, delimiter="\n")
       scores.append((data, filename.split('.')[0:-1]))
       print '[INFO] score loaded from ' + filename
 
@@ -36,7 +36,7 @@ def load_data():
       print '[!ERROR!] Please place one label file in the path_label folder'
       return
     for filename in filenames:
-      label = np.loadtxt(path_label + '\\' + filename, dtype=np.int16, delimiter='\n')
+      label = np.loadtxt(path_label + os.path.sep + filename, dtype=np.int16, delimiter='\n')
       print '[INFO] label loaded from ' + filename
       label_set = set(label.tolist())
 
