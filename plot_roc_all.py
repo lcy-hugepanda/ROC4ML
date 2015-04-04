@@ -10,11 +10,16 @@ import numpy as np
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 import seaborn as sns
-import ROC4ML_config as config
+#import ROC4ML_config as config
+import json
 
-path_score = config.path_score
-path_label = config.path_label
-positive_label = config.positive_label
+# path_score = config.path_score
+# path_label = config.path_label
+# positive_label = config.positive_label
+
+fjson = open('config.json')
+decodejson = json.loads(fjson, encoding="utf-8")
+print decodejson
 
 def load_data():
   # load scores and store them in a list, its element is a tuple (score, name)

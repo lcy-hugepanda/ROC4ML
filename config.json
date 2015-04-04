@@ -1,0 +1,6 @@
+{
+  "style":"seaborn",
+  "path_score":"data_score",
+  "path_label":"data_label",
+  "positive_label":3
+}
